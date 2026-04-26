@@ -5,7 +5,7 @@ Why would anyone want to convert text written with the numbers 1 and 0 into bina
 # How to use the command
 
 ```bash
-tts -fw byte -o byte_out
+ttb -fw byte -o byte_out
 ```
 
 |argv|meaning
