@@ -7,7 +7,7 @@ on:
   push:
     paths:
       - src/**
-      - .github/workflows/**
+      - .github/workflows/ci.yml
   workflow_dispatch:
 
 permissions:
