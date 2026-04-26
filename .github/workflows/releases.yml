@@ -13,7 +13,7 @@ permissions:
   contents: read
 
 jobs:
-  BUILD:
+  UPLOAD:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
