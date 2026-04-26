@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: 0BSD
+# Author: Makkhawan Sardlah
+
+name: CI
+
+on: 
+  push:
+    paths:
+      - src/**
+      - .github/workflows/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  BUILD:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup gcc
+        uses: egor-tensin/setup-gcc@v1
+      - uses: actions/checkout@v6
+      - name: Test compile
+        run: |
+            cd src
+            make
